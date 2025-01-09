@@ -1,0 +1,100 @@
+[
+    {
+        "id": "3fb4fe6b1fe92cfc",
+        "type": "tab",
+        "label": "Aula 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7ab136aac2afe229",
+        "type": "inject",
+        "z": "3fb4fe6b1fe92cfc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "3e23a8d7714f1496"
+            ]
+        ]
+    },
+    {
+        "id": "3e23a8d7714f1496",
+        "type": "debug",
+        "z": "3fb4fe6b1fe92cfc",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5bb3e6052af1d946",
+        "type": "inject",
+        "z": "3fb4fe6b1fe92cfc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Eu sou o Toniolo",
+        "payloadType": "str",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "d9ee7d425578857d"
+            ]
+        ]
+    },
+    {
+        "id": "d9ee7d425578857d",
+        "type": "debug",
+        "z": "3fb4fe6b1fe92cfc",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 220,
+        "wires": []
+    }
+]
