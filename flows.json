@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "a5b8040406fcb11a",
+        "type": "tab",
+        "label": "Aula 7",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7ab136aac2afe229",
         "type": "inject",
         "z": "3fb4fe6b1fe92cfc",
@@ -155,6 +163,621 @@
         "statusType": "auto",
         "x": 480,
         "y": 80,
+        "wires": []
+    },
+    {
+        "id": "57ad7292aed5d141",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1c6b62ce18d0b83c",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Olá guilherme",
+        "payloadType": "str",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "57ad7292aed5d141"
+            ]
+        ]
+    },
+    {
+        "id": "d79345d6947562c6",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hi Guilherme",
+        "payloadType": "str",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "57ad7292aed5d141"
+            ]
+        ]
+    },
+    {
+        "id": "e6a4db30d232db03",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Bom dia, Guilherme",
+        "payloadType": "str",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "18a16fb2f0801f65"
+            ]
+        ]
+    },
+    {
+        "id": "18a16fb2f0801f65",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "850a237715df660a",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "carro 1",
+        "props": [
+            {
+                "p": "cor",
+                "v": "prata",
+                "vt": "str"
+            },
+            {
+                "p": "marca",
+                "v": "ford",
+                "vt": "str"
+            },
+            {
+                "p": "ano",
+                "v": "2021",
+                "vt": "num"
+            },
+            {
+                "p": "motor",
+                "v": "combustao",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "963c29f0b8365986",
+                "4fb75f45a69102f0",
+                "4921a86d6cf5c942",
+                "121bfb9c0f1231c3",
+                "83ff3f8f2476c57f",
+                "042cecd8dc3fdd44"
+            ]
+        ]
+    },
+    {
+        "id": "963c29f0b8365986",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4fb75f45a69102f0",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "cor",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "cor",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4921a86d6cf5c942",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "marca",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "marca",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "121bfb9c0f1231c3",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "ano",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "ano",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "83ff3f8f2476c57f",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "motor",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "motor",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "042cecd8dc3fdd44",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "msg completo",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "cd4c2174ba00f043",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "2fb0b4a171c60b3c",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Olá guilherme",
+        "payloadType": "str",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "cd4c2174ba00f043"
+            ]
+        ]
+    },
+    {
+        "id": "e29997d0dd4d09f7",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cadeia de caracteres",
+        "payloadType": "str",
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "2619deeb46193c69"
+            ]
+        ]
+    },
+    {
+        "id": "8cb0b8e251ea2b5e",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "44",
+        "payloadType": "num",
+        "x": 210,
+        "y": 860,
+        "wires": [
+            [
+                "2619deeb46193c69"
+            ]
+        ]
+    },
+    {
+        "id": "11034538902b8da8",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 210,
+        "y": 900,
+        "wires": [
+            [
+                "2619deeb46193c69"
+            ]
+        ]
+    },
+    {
+        "id": "e7fdc127d5b316c6",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 210,
+        "y": 940,
+        "wires": [
+            [
+                "2619deeb46193c69"
+            ]
+        ]
+    },
+    {
+        "id": "aec7d3f24dc14aec",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 980,
+        "wires": [
+            [
+                "2619deeb46193c69"
+            ]
+        ]
+    },
+    {
+        "id": "2619deeb46193c69",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6336f56ba684caf9",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "gato 1",
+        "props": [
+            {
+                "p": "raca",
+                "v": "vira lata",
+                "vt": "str"
+            },
+            {
+                "p": "cor",
+                "v": "preto",
+                "vt": "str"
+            },
+            {
+                "p": "nascimento",
+                "v": "2021",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 660,
+        "wires": [
+            [
+                "c834d40b6b6ed0de"
+            ]
+        ]
+    },
+    {
+        "id": "c834d40b6b6ed0de",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "85580328ad516f2a",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "sem nenhuma propriedade",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1120,
+        "wires": [
+            [
+                "dacdaa93f4c45e12"
+            ]
+        ]
+    },
+    {
+        "id": "dacdaa93f4c45e12",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "da67bd76a55ae729",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "sem nenhuma propriedade",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "bbc4de9adb77b223"
+            ]
+        ]
+    },
+    {
+        "id": "bbc4de9adb77b223",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "02138e6c580ee69e",
+        "type": "inject",
+        "z": "a5b8040406fcb11a",
+        "name": "sem nenhuma propriedade",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 1200,
+        "wires": [
+            [
+                "c6724105fbb3a99d"
+            ]
+        ]
+    },
+    {
+        "id": "c6724105fbb3a99d",
+        "type": "debug",
+        "z": "a5b8040406fcb11a",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "_msgid",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1200,
         "wires": []
     }
 ]
