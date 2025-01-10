@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "4d41ad0c34844665",
+        "type": "tab",
+        "label": "Aula 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7ab136aac2afe229",
         "type": "inject",
         "z": "3fb4fe6b1fe92cfc",
@@ -95,6 +103,58 @@
         "statusType": "auto",
         "x": 440,
         "y": 220,
+        "wires": []
+    },
+    {
+        "id": "51cd4cc4101bbae0",
+        "type": "inject",
+        "z": "4d41ad0c34844665",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "nomedamusica",
+                "v": "Meteoro da paixão",
+                "vt": "str"
+            },
+            {
+                "p": "cordocarro",
+                "v": "verde",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "e0fb35614bf77dd3"
+            ]
+        ]
+    },
+    {
+        "id": "e0fb35614bf77dd3",
+        "type": "debug",
+        "z": "4d41ad0c34844665",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 80,
         "wires": []
     }
 ]
